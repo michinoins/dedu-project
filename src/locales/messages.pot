@@ -692,6 +692,9 @@ msgstr ""
 msgid "Current handle"
 msgstr ""
 
+msgid "test your thing"
+msgstr ""
+
 msgid "Telegram link"
 msgstr ""
 
@@ -2565,9 +2568,6 @@ msgid "For charities"
 msgstr ""
 
 msgid "Edit project"
-msgstr ""
-
-msgid "Fund your thing"
 msgstr ""
 
 msgid "Compare"
