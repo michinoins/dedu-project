@@ -94,7 +94,7 @@ export function TopSection() {
       <SectionHeading
         className="mb-8"
         headingClassName="text-5xl md:text-7xl"
-        heading={<Trans>Fund your thing</Trans>}
+        heading={<Trans>test your thing</Trans>}
         subheading={
           <Trans>
             Join thousands of projects using Juicebox to fund, operate, and

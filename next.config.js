@@ -46,6 +46,7 @@ const IMG_SRC = [
   'https://cdn.discordapp.com',
   'https://cdn.usefathom.com',
   '*.walletconnect.com',
+  'https://*.pinata.cloud', // Added Pinata Cloud
 ]
 
 const CONNECT_SRC = [
@@ -70,7 +71,8 @@ const CONNECT_SRC = [
   'https://*.supabase.co',
   'https://api.ensideas.com',
   'https://cloudflare-eth.com',
-  'https://rpc.sepolia.org/'
+  'https://rpc.sepolia.org/',
+  'https://*.pinata.cloud', // Added Pinata Cloud
 ]
 
 const FRAME_ANCESTORS = [

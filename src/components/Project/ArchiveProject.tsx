@@ -60,7 +60,7 @@ export function ArchiveProject({
       ...projectMetadata,
       archived,
     })
-    if (!uploadedMetadata.Hash) {
+    if (!uploadedMetadata.IpfsHash) {
       return emitErrorNotification(t`Failed to update project metadata`)
     }
 

@@ -127,8 +127,7 @@ async function uploadNftRewardToIPFS({
   }
 
   const res = await pinJson(ipfsNftRewardTier)
-
-  return res.Hash
+  return res.IpfsHash
 }
 
 /**
@@ -138,7 +137,7 @@ async function uploadNftRewardToIPFS({
 export async function pinNftRewards(
   nftRewards: NftRewardTier[],
 ): Promise<string[]> {
-  return await Promise.all(
+  const hoge = await Promise.all(
     // NOTE: Other code relies on the fact that the reward tiers are sorted by contribution floor
     // DO NOT CHANGE without considering all implications.
     // TODO: fix this ^
@@ -149,6 +148,8 @@ export async function pinNftRewards(
       }),
     ),
   )
+
+  return hoge
 }
 
 export async function pinNftCollectionMetadata({
@@ -176,7 +177,7 @@ export async function pinNftCollectionMetadata({
   }
 
   const res = await pinJson(IPFSNftCollectionMetadata)
-  return res.Hash
+  return res.IpfsHash
 }
 
 // Determines if two NFT reward tiers are equal

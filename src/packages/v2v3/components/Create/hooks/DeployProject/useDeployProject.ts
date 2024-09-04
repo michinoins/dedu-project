@@ -125,6 +125,7 @@ export const useDeployProject = () => {
           return // TODO error notification
         }
         const txReceipt = await findTransactionReceipt(hash)
+
         if (!txReceipt) {
           return // TODO error notification
         }
@@ -139,6 +140,7 @@ export const useDeployProject = () => {
 
         // Reset the project state
         dispatch(editingV2ProjectActions.resetState())
+
         onProjectDeployed?.(projectId)
       },
       onError: error => {
@@ -200,7 +202,7 @@ export const useDeployProject = () => {
             softTargetCurrency,
             nftPaymentSuccessModal: postPayModal,
           })
-        ).Hash
+        ).IpfsHash
       } catch (error) {
         handleDeployFailure(error)
         return
@@ -227,6 +229,7 @@ export const useDeployProject = () => {
           return
         }
       } catch (error) {
+        console.error('Error details:', error) // エラーの詳細をログに出力
         handleDeployFailure(error)
         return
       }

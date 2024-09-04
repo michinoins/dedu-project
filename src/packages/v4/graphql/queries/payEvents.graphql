@@ -18,7 +18,6 @@ query PayEvents(
     beneficiary
     note
     timestamp
-    beneficiaryTokenCount
     from
     txHash
     project {
