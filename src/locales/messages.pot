@@ -38,9 +38,6 @@ msgstr ""
 msgid "Project treasury version"
 msgstr ""
 
-msgid "<0>When Juicebox projects make payouts to external wallets (like \"vitalik.eth\"), they incur a {JB_FEE}% fee, which is paid to <1>JuiceboxDAO</1>. In exchange, they receive JuiceboxDAO's project tokens, allowing them to govern the protocol. They can also redeem these tokens to reclaim some of the fees.</0><2><3>Payouts to other Juicebox projects don't incur any fees.</3></2><4><5>Learn more about fees</5>.</4>"
-msgstr ""
-
 msgid "Disconnect"
 msgstr ""
 
@@ -51,9 +48,6 @@ msgid "Art"
 msgstr ""
 
 msgid "Deploy changes"
-msgstr ""
-
-msgid "How should I set up my project?"
 msgstr ""
 
 msgid "To switch to 'Limited' payouts, enter a total amount to pay out of the treasury to split between your recipients."
@@ -114,6 +108,9 @@ msgid "REMAINING SUPPLY: Unlimited"
 msgstr ""
 
 msgid "project owner"
+msgstr ""
+
+msgid "TURNING EDUCATION"
 msgstr ""
 
 msgid "When people pay your project, they receive its tokens. Project tokens can be used for governance or community access, and token holders can redeem their tokens to reclaim some ETH from your project. You can also reserve some tokens for recipients of your choosing."
@@ -293,6 +290,9 @@ msgstr ""
 msgid "You must grant permission to migrate your V1 tokens."
 msgstr ""
 
+msgid "How much will a course cost?"
+msgstr ""
+
 msgid "Add an on-chain memo to this payment."
 msgstr ""
 
@@ -327,9 +327,6 @@ msgid "Token minting enabled"
 msgstr ""
 
 msgid "Edits to an upcoming cycle must be submitted at least 7 days before that cycle starts."
-msgstr ""
-
-msgid "<0>When you pay a project, you <1>may</1> receive that project's tokens or NFTs (depending on how the project is set up).</0><2>By default, these tokens represent a partial claim on the project's ETH, and they are often used for governance rights, community access, or other membership perks.</2><3>All of this can change from project to project. Read everything carefully, and make sure you understand the project's rules before you support it. If you need help, <4>contact us</4>, or stop by the <5>Juicebox Discord server</5>.</3>"
 msgstr ""
 
 msgid "Tokens receiver"
@@ -386,6 +383,9 @@ msgstr ""
 msgid "Uploaded to: <0/>"
 msgstr ""
 
+msgid "Yes, you can leave a review for the teacher after completing the course."
+msgstr ""
+
 msgid "Transfer unclaimed tokens"
 msgstr ""
 
@@ -408,6 +408,9 @@ msgid "Your Message"
 msgstr ""
 
 msgid "Choosing 'None' will clear your payout recipients and reset other payout options."
+msgstr ""
+
+msgid "How does the School make money?"
 msgstr ""
 
 msgid "Zero address cannot be used"
@@ -462,6 +465,9 @@ msgid "NFTs & Rewards"
 msgstr ""
 
 msgid "Project owner address"
+msgstr ""
+
+msgid "Where can I buy the dEdu token to access the content creation page?"
 msgstr ""
 
 msgid "Payouts cannot exceed 100%. Total: {0}"
@@ -533,10 +539,16 @@ msgstr ""
 msgid "If locked, this payout can't be edited or removed until the lock expires or the cycle is edited."
 msgstr ""
 
+msgid "Yes, as long as the content adheres to our guidelines and policies."
+msgstr ""
+
 msgid "Project isn't currently issuing tokens, but is issuing NFTs"
 msgstr ""
 
 msgid "I understand"
+msgstr ""
+
+msgid "Course durations vary. Each course will have its duration listed in the course details."
 msgstr ""
 
 msgid "This cycle has upcoming changes"
@@ -588,6 +600,9 @@ msgid "<0>This project has a redemptions turned off</0>. You won't receive any E
 msgstr ""
 
 msgid "Current cycle"
+msgstr ""
+
+msgid "The cost of a course varies depending on the instructor and the course content. Please check the course details for specific pricing."
 msgstr ""
 
 msgid "You must grant permission to migrate your V2 tokens."
@@ -689,6 +704,9 @@ msgstr ""
 msgid "Delete token allocation"
 msgstr ""
 
+msgid "You can buy the dEdu token on our official website or through authorized exchanges."
+msgstr ""
+
 msgid "Current handle"
 msgstr ""
 
@@ -696,6 +714,9 @@ msgid "Telegram link"
 msgstr ""
 
 msgid "This cycle has token redemptions {0}"
+msgstr ""
+
+msgid "Can I really teach about anything?"
 msgstr ""
 
 msgid "No past cycles"
@@ -893,9 +914,6 @@ msgstr ""
 msgid "This ruleset has upcoming changes"
 msgstr ""
 
-msgid "<0><1>Peel</1> manages this website — the juicebox.money frontend interface. You can reach out to Peel through the <2>Peel Discord</2>.</0><3><4>JuiceboxDAO</4> builds and governs the Juicebox fundraising protocol and other community resources. You can reach out to JuiceboxDAO through the <5>Juicebox Discord</5>.</3>"
-msgstr ""
-
 msgid "To add NFTs to your next cycle, you'll need to <0>grant NFT permissions</0>."
 msgstr ""
 
@@ -1052,6 +1070,9 @@ msgstr ""
 msgid "Transaction hash"
 msgstr ""
 
+msgid "How long will a course be for?"
+msgstr ""
+
 msgid "Cycle length"
 msgstr ""
 
@@ -1071,6 +1092,9 @@ msgid "Your total legacy tokens"
 msgstr ""
 
 msgid "Redemption rate determines what proportion of this project's treasury can be reclaimed by a token holder by redeeming their tokens."
+msgstr ""
+
+msgid "If you don't reach your target funding, you can either adjust your target or seek additional funding sources."
 msgstr ""
 
 msgid "Collection Name"
@@ -1101,6 +1125,9 @@ msgid "Cover image"
 msgstr ""
 
 msgid "Choose an ENS name to use as the project's handle. Subdomains are allowed and will be included in the handle. Handles won't include the \".eth\" extension."
+msgstr ""
+
+msgid "Explore course"
 msgstr ""
 
 msgid "Total:"
@@ -1149,6 +1176,9 @@ msgid "Failed to send message."
 msgstr ""
 
 msgid "This contract manages NFT minting and redeeming for this project."
+msgstr ""
+
+msgid "Yes, there will be opportunities to interact with other participants through discussion forums and live sessions."
 msgstr ""
 
 msgid "None"
@@ -1385,6 +1415,9 @@ msgstr ""
 msgid "Treasury & Payouts"
 msgstr ""
 
+msgid "<0>dEdu is a decentralized online school with live courses taught by anybody who gets crowdfunded to teach</0>"
+msgstr ""
+
 msgid "Error loading holders"
 msgstr ""
 
@@ -1413,9 +1446,6 @@ msgid "File"
 msgstr ""
 
 msgid "You have <0>{0} ETH</0> of unclaimed NFT credits"
-msgstr ""
-
-msgid "<0>Juicebox is a <1>governance-minimal</1> protocol. There are only a few levers that can be tuned, none of which impose changes for users without their consent. The Juicebox governance smart contract can adjust these levers.</0><2>The Juicebox protocol is governed by a community of JBX token holders who vote on proposals fortnightly.</2><3>Juicebox is on-chain and non-custodial. Project creators actually own their projects, and JuiceboxDAO has no way to access project's ETH or change their rules.</3>"
 msgstr ""
 
 msgid "Pay {projectTitle}"
@@ -1520,6 +1550,9 @@ msgstr ""
 msgid "Your NFTs & Rewards"
 msgstr ""
 
+msgid "Do I get help putting my course materials online and organizing the live feed?"
+msgstr ""
+
 msgid "Send a portion of your project's reserved tokens to other Ethereum wallets or Juicebox projects."
 msgstr ""
 
@@ -1560,12 +1593,6 @@ msgid "Version of the terminal contract used by this project."
 msgstr ""
 
 msgid "This cycle's payouts"
-msgstr ""
-
-msgid "<0>This website interacts with the Ethereum blockchain — to use it, you'll need to have a wallet and some ETH (ETH is the main currency on Ethereum). You can get a free wallet from <1>MetaMask.io</1>, and buy ETH from within the wallet by using a credit card.</0>"
-msgstr ""
-
-msgid "<0>For more information, or help with anything else, <1>contact onboarding</1> and join the <2>JuiceboxDAO Discord server</2>.</0>"
 msgstr ""
 
 msgid "Payment memo"
@@ -1874,6 +1901,9 @@ msgstr ""
 msgid "This project's rules may pose risks for contributors:"
 msgstr ""
 
+msgid "<0>O</0><1>И</1> <2>I</2><3>T</3><4>S</4> <5>H</5><6>E</6><7>A</7><8>D</8>"
+msgstr ""
+
 msgid "Enable NFTs"
 msgstr ""
 
@@ -2126,6 +2156,9 @@ msgstr ""
 msgid "Set splits for {projectTitle}"
 msgstr ""
 
+msgid "Is the course in person?"
+msgstr ""
+
 msgid "Token name"
 msgstr ""
 
@@ -2171,9 +2204,6 @@ msgstr ""
 msgid "Deployed a project payer address"
 msgstr ""
 
-msgid "Join thousands of projects using Juicebox to fund, operate, and scale their ideas & communities transparently on Ethereum."
-msgstr ""
-
 msgid "Percent"
 msgstr ""
 
@@ -2193,6 +2223,9 @@ msgid "Receive ERC-20"
 msgstr ""
 
 msgid "Must be less than {0} characters"
+msgstr ""
+
+msgid "What if I don't reach my target funding for my course?"
 msgstr ""
 
 msgid "The amount of ETH this project can pay out of its treasury each Cycle."
@@ -2357,9 +2390,6 @@ msgstr ""
 msgid "This project's rules will be locked in place for {cycleLengthValue}."
 msgstr ""
 
-msgid "What does Juicebox cost?"
-msgstr ""
-
 msgid "Connect wallet"
 msgstr ""
 
@@ -2415,6 +2445,9 @@ msgid "Subscribe to updates"
 msgstr ""
 
 msgid "Games"
+msgstr ""
+
+msgid "Instructors can set their own prices based on the value and content of the course."
 msgstr ""
 
 msgid "While enabled, the project owner can change the project's <0>controller</0> at any time."
@@ -2504,10 +2537,10 @@ msgstr ""
 msgid "One or more reserved token recipients"
 msgstr ""
 
-msgid "<0>To summarize:</0><1><2>When people pay a project, they receive the project's tokens. Like other tokens, these can be used for governance, for token-gated websites, and other purposes.</2><3>Projects can pay out ETH to the wallets or Juicebox projects of their choosing. These payouts can be pre-defined, and they can also be changed over time.</3><4>If people are unhappy with the direction a project is headed, they can redeem their tokens to claim a share of the ETH held in the project.</4></1><5>Project creators have powerful controls over each one of these mechanics. They can change token issuance rates, redemption rates, payouts, and other rules over time, leading to powerful and elegant tokenomics. They can also lock their project's rules in place for pre-determined amounts of time (called <6>cycles</6>), guaranteeing that they can't rugpull the community. Juicebox lets projects take control if they need to, but it also lets them give up control to build trust.</5><7>Importantly, Juicebox's crypto fundraising platform is on-chain and non-custodial. Project creators actually own their projects, and JuiceboxDAO has no way to access a project's ETH or change its rules.</7><8>To learn more, visit <9>our docs</9>.</8>"
+msgid "No distributable reserved tokens have been configured for this project."
 msgstr ""
 
-msgid "No distributable reserved tokens have been configured for this project."
+msgid "Are the courses accredited? How will my completion of the course be recognized e.g. by my employer?"
 msgstr ""
 
 msgid "Owned by: <0/>"
@@ -2565,9 +2598,6 @@ msgid "For charities"
 msgstr ""
 
 msgid "Edit project"
-msgstr ""
-
-msgid "Fund your thing"
 msgstr ""
 
 msgid "Compare"
@@ -2642,12 +2672,6 @@ msgstr ""
 msgid "Give permissions to {0} on project #{projectId}"
 msgstr ""
 
-msgid "<0>Juicebox has had <1>multiple security audits</1>, and has handled tens of thousands of ETH through its protocol.</0><2>However, Juicebox is still experimental software. Although the Juicebox contract team have done their part to shape the smart contracts for public use and have tested the code thoroughly, the risk of exploits is never 0%.</2><3>Due to their public nature, any exploits to the contracts may have irreversible consequences, including loss of ETH. Please use Juicebox with caution.</3><4><5>Learn more about the risks.</5></4>"
-msgstr ""
-
-msgid "How decentralized is Juicebox?"
-msgstr ""
-
 msgid "Unable to load chart"
 msgstr ""
 
@@ -2663,7 +2687,7 @@ msgstr ""
 msgid "This Juicebox V3 project also has a project on Juicebox V1 and/or V2. The project owner is allowing you to migrate your legacy tokens (V1 or V2) for V3 tokens."
 msgstr ""
 
-msgid "How do I use this website?"
+msgid "Some courses may have a limit on the number of students to ensure quality interaction. Please check the course details for specific limits."
 msgstr ""
 
 msgid "ERC20 transaction not ready. Try again."
@@ -2708,10 +2732,10 @@ msgstr ""
 msgid "The onchain memo for each payment made through this address. The project's payment feed will include the memo alongside the payment."
 msgstr ""
 
-msgid "No activity yet"
+msgid "Accreditation varies by course. Please check the course details for accreditation information. Completion certificates are provided for most courses."
 msgstr ""
 
-msgid "What does Juicebox actually do?"
+msgid "No activity yet"
 msgstr ""
 
 msgid "Archiving your project has the following effects:"
@@ -2739,6 +2763,9 @@ msgid "2. Manage your funds"
 msgstr ""
 
 msgid "Connect wallet to transfer ETH"
+msgstr ""
+
+msgid "Most courses are online, but some may offer in-person sessions. Please check the course details for more information."
 msgstr ""
 
 msgid "Use for redemptions"
@@ -2921,6 +2948,9 @@ msgstr ""
 msgid "Redeem {tokenTicker}"
 msgstr ""
 
+msgid "Teach a project"
+msgstr ""
+
 msgid "{reservedRate} of token issuance is set aside for the recipients below."
 msgstr ""
 
@@ -2982,6 +3012,9 @@ msgid "Juicebox gives you the tools to automate web3 fundraising so you can focu
 msgstr ""
 
 msgid "Your transaction was successful."
+msgstr ""
+
+msgid "How do I set a price for my course?"
 msgstr ""
 
 msgid "Owner wallet"
@@ -3134,6 +3167,9 @@ msgstr ""
 msgid "Payout total (max.)"
 msgstr ""
 
+msgid "How do I access a course?"
+msgstr ""
+
 msgid "Prevent NFT overspending"
 msgstr ""
 
@@ -3216,6 +3252,9 @@ msgid "Unlocked"
 msgstr ""
 
 msgid "Amount"
+msgstr ""
+
+msgid "Is there a limit on the number of students per course?"
 msgstr ""
 
 msgid "Memos appear on the project's activity feed when a payment is made through this address."
@@ -3614,9 +3653,6 @@ msgstr ""
 msgid "{value} {tokenSymbol}/ETH"
 msgstr ""
 
-msgid "<0>Juicebox is a programmable crypto fundraising platform for web3. It helps people fund, operate, and scale their projects transparently using Ethereum, which is a type of programmable cryptocurrency.</0><1>Juicebox is funded and owned by its community.</1>"
-msgstr ""
-
 msgid "Reserved issuance rate"
 msgstr ""
 
@@ -3629,6 +3665,9 @@ msgstr ""
 msgid "Custom Token Rules"
 msgstr ""
 
+msgid "The School takes a small fee from each course enrollment to cover operational costs."
+msgstr ""
+
 msgid "Edit {projectTitle}"
 msgstr ""
 
@@ -3639,6 +3678,9 @@ msgid "Changes to your collection details may not be reflected in some marketpla
 msgstr ""
 
 msgid "My account"
+msgstr ""
+
+msgid "Once you enroll in a course, you will receive access details via email. You can also access the course through your account dashboard."
 msgstr ""
 
 msgid "When enabled, supporters can only mint NFTs by paying their exact price. This ensures that they can reclaim their full payment amount if they redeem their NFT."
@@ -3809,9 +3851,6 @@ msgstr ""
 msgid "Save handle"
 msgstr ""
 
-msgid "Has Juicebox been audited? What are the risks?"
-msgstr ""
-
 msgid "Customization"
 msgstr ""
 
@@ -3890,6 +3929,9 @@ msgstr ""
 msgid "{0} is not valid URL"
 msgstr ""
 
+msgid "Can I review the teacher?"
+msgstr ""
+
 msgid "Amount (ETH)"
 msgstr ""
 
@@ -3903,9 +3945,6 @@ msgid "Socials"
 msgstr ""
 
 msgid "Archived projects haven't been modified or deleted on-chain. They can still be interacted with directly through the Juicebox contracts."
-msgstr ""
-
-msgid "Who is Peel? Who is JuiceboxDAO?"
 msgstr ""
 
 msgid "USD value of ETH transferred"
@@ -3998,6 +4037,9 @@ msgstr ""
 msgid "Simple token rules that will work for most projects. You can edit these rules in future cycles."
 msgstr ""
 
+msgid "If you miss a livestream, a recording will usually be available for you to watch later."
+msgstr ""
+
 msgid "Start"
 msgstr ""
 
@@ -4043,9 +4085,6 @@ msgstr ""
 msgid "Date created"
 msgstr ""
 
-msgid "What happens when I pay a project?"
-msgstr ""
-
 msgid "For fundraising"
 msgstr ""
 
@@ -4070,6 +4109,9 @@ msgstr ""
 msgid "View token info"
 msgstr ""
 
+msgid "Yes, we provide support to help you put your course materials online and organize live sessions."
+msgstr ""
+
 msgid "Unchanged"
 msgstr ""
 
@@ -4086,9 +4128,6 @@ msgid "Your project's NFT contract version is not supported."
 msgstr ""
 
 msgid "Hold fees in project"
-msgstr ""
-
-msgid "I have another question!"
 msgstr ""
 
 msgid "Manage your project's state and ownership"
@@ -4149,9 +4188,6 @@ msgid "About"
 msgstr ""
 
 msgid "Reserved {tokenSymbolPlural}"
-msgstr ""
-
-msgid "<0>If you're looking for help planning or deploying your project, you can <1>contact onboarding</1>. For project setup tips and more resources, take a look at the <2>Project Creator Docs</2>. You should also join JuiceboxDAO's <3>Discord server</3>, where DAO contributors can guide you through the project creation process.</0>"
 msgstr ""
 
 msgid "Open source"
@@ -4274,6 +4310,9 @@ msgstr ""
 msgid "Manage your project's NFTs and rewards"
 msgstr ""
 
+msgid "What happens if I can't attend the course livestream?"
+msgstr ""
+
 msgid "Pay {projectName}"
 msgstr ""
 
@@ -4281,6 +4320,9 @@ msgid "Advanced options"
 msgstr ""
 
 msgid "Current redemption rate: {0}%"
+msgstr ""
+
+msgid "Will I get to meet other participants?"
 msgstr ""
 
 msgid "Start time"
@@ -4302,9 +4344,6 @@ msgid "End"
 msgstr ""
 
 msgid "Message sent!"
-msgstr ""
-
-msgid "What's Juicebox?"
 msgstr ""
 
 msgid "Last {TRENDING_WINDOW_DAYS} days"
