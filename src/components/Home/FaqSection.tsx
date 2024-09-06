@@ -1,5 +1,10 @@
 import { Disclosure, Transition } from '@headlessui/react'
-import { MinusIcon, PlusIcon } from '@heroicons/react/24/solid'
+import {
+  BriefcaseIcon,
+  MinusIcon,
+  PlusIcon,
+  UserIcon,
+} from '@heroicons/react/24/solid'
 import { Trans } from '@lingui/macro'
 import QAs from 'components/Home/FaqList/QAs'
 import { SectionContainer } from 'components/Home/SectionContainer'
@@ -18,10 +23,22 @@ export function FaqSection() {
     <SectionContainer>
       <SectionHeading heading={<Trans>FAQs</Trans>} />
       <div className="mx-auto w-full max-w-3xl">
-        {qa.map(({ id, q, a }) => (
+        {qa.map(({ id, q, a, type }) => (
           <Disclosure as="div" key={id}>
             {() => {
               const isOpen = openId === id
+              const bgColor =
+                type === 'user'
+                  ? 'bg-bluebs-100 dark:bg-bluebs-800'
+                  : 'bg-melon-100 dark:bg-melon-800'
+
+              const textColor =
+                type === 'user'
+                  ? 'text-bluebs-800 dark:text-bluebs-100'
+                  : 'text-melon-800 dark:text-melon-100'
+
+              const Icon = type === 'user' ? UserIcon : BriefcaseIcon
+              const label = type === 'user' ? 'User' : 'Creator'
               return (
                 <div className="stroke-tertiary border-t">
                   <Disclosure.Button
@@ -30,7 +47,15 @@ export function FaqSection() {
                   >
                     <>
                       <div className="text-primary flex w-full items-center justify-between gap-6 text-start text-lg font-medium">
-                        {q}
+                        <div className="flex items-center gap-2">
+                          <Icon className="h-5 w-5 flex-shrink-0" />
+                          <span
+                            className={`rounded-full px-3 py-2 ${bgColor} ${textColor}`}
+                          >
+                            {label}
+                          </span>
+                          {q}
+                        </div>
                         <FaqButton open={isOpen} />
                       </div>
 
