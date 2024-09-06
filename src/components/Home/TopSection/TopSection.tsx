@@ -72,6 +72,14 @@ export function TopSection() {
     ? [...trendingProjects, ...renderBackup]
     : undefined
 
+  const rotatedStyle = {
+    display: 'inline-block',
+    transform: 'rotate(180deg)',
+  }
+  const helixFontStyle = {
+    fontFamily: 'Helix, sans-serif',
+  }
+
   return (
     <SectionContainer className="pt-6 pb-24 md:px-0 md:pt-10">
       <div className="flex justify-center">
@@ -94,11 +102,29 @@ export function TopSection() {
       <SectionHeading
         className="mb-8"
         headingClassName="text-5xl md:text-7xl"
-        heading={<Trans>Fund your thing</Trans>}
+        heading={
+          <>
+            <Trans>TURNING EDUCATION</Trans>
+            <br />
+            <Trans>
+              <span style={{ ...rotatedStyle, ...helixFontStyle }}>O</span>
+              <span style={{ ...rotatedStyle, ...helixFontStyle }}>И</span>{' '}
+              <span style={{ ...rotatedStyle, ...helixFontStyle }}>I</span>
+              <span style={{ ...rotatedStyle, ...helixFontStyle }}>T</span>
+              <span style={{ ...rotatedStyle, ...helixFontStyle }}>S</span>{' '}
+              <span style={{ ...rotatedStyle, ...helixFontStyle }}>H</span>
+              <span style={{ ...rotatedStyle, ...helixFontStyle }}>E</span>
+              <span style={{ ...rotatedStyle, ...helixFontStyle }}>A</span>
+              <span style={{ ...rotatedStyle, ...helixFontStyle }}>D</span>
+            </Trans>{' '}
+          </>
+        }
         subheading={
           <Trans>
-            Join thousands of projects using Juicebox to fund, operate, and
-            scale their ideas & communities transparently on Ethereum.
+            <span style={helixFontStyle}>
+              dEdu is a decentralized online school with live courses taught by
+              anybody who gets crowdfunded to teach
+            </span>
           </Trans>
         }
       />
@@ -112,7 +138,7 @@ export function TopSection() {
               trackFathomGoal(HOMEPAGE.EXPLORE_PROJECTS_CTA)
             }}
           >
-            <Trans>Explore projects</Trans>
+            <Trans>Explore course</Trans>
           </XLButton>
         </Link>
         <Link href="/create" className="w-full md:w-auto">
@@ -124,7 +150,7 @@ export function TopSection() {
               trackFathomGoal(HOMEPAGE.CREATE_A_PROJECT_CTA_NEW)
             }}
           >
-            <Trans>Create a project</Trans>
+            <Trans>Teach a project</Trans>
           </XLButton>
         </Link>
       </div>
