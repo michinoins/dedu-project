@@ -1,6 +1,5 @@
 import {
   CurrencyDollarIcon,
-  UserGroupIcon,
   WrenchScrewdriverIcon,
 } from '@heroicons/react/24/outline'
 import { Trans, t } from '@lingui/macro'
@@ -8,7 +7,7 @@ import ExternalLink from 'components/ExternalLink'
 import { SectionContainer } from 'components/Home/SectionContainer'
 import { SectionHeading } from 'components/Home/SectionHeading'
 import { XLButton } from 'components/buttons/XLButton'
-import Image from "next/legacy/image"
+import Image from 'next/legacy/image'
 import Link from 'next/link'
 import sassyBlueberry from '/public/assets/images/sassy-blueberry.webp'
 
@@ -48,7 +47,7 @@ export function HowJuiceboxWorksSection() {
   return (
     <SectionContainer>
       <SectionHeading
-        heading={t`How Juicebox works`}
+        heading={t`How dEdu works`}
         subheading={
           <Trans>
             It's fast, powerful and easy to use. Launch your project and get
@@ -60,38 +59,28 @@ export function HowJuiceboxWorksSection() {
         <div className="justify-between pb-16 lg:flex lg:items-center">
           <div className="flex max-w-xl flex-col gap-y-12">
             <StepItem
-              header={t`1. Create your project`}
+              header={t`For teachers`}
               icon={<WrenchScrewdriverIcon className="h-6 w-6" />}
               showDottedLine
             >
               <Trans>
-                Juicebox is the best-in-class tool for crowdfunding your project
-                with ETH - build your supporters' trust by transparently setting
-                up payouts, token issuance, redemption, and other rules in
-                advance.
+                If you want to teach about something, simply create a
+                crowdfunding campaign on the School’s platform. You only need 1
+                dEdu token to be a content creator. Once funded, the School
+                provides you with everything you need, from webinar software to
+                content creation tools.
               </Trans>
             </StepItem>
             <StepItem
-              header={t`2. Manage your funds`}
+              header={t`For students`}
               icon={<CurrencyDollarIcon className="h-6 w-6" />}
-              showDottedLine
             >
               <Trans>
-                Get paid in ETH, program your own payouts, token issuance, and
-                redemptions to easily run your treasury completely on-chain — as
-                your community grows, you can update your treasury's rules to
-                grow with it.
-              </Trans>
-            </StepItem>
-            <StepItem
-              header={t`3. Build your community`}
-              icon={<UserGroupIcon className="h-6 w-6" />}
-            >
-              <Trans>
-                Issue tokens or NFTs to your supporters and use them for
-                governance, token-gated websites, or redemptions. With flexible
-                token issuance and redemption, your project automatically scales
-                to meet your supporters' demand.
+                If you’d like to see a course taught, back its campaign from
+                your connected wallet using any major crypto. The course price
+                is set by the teacher and everybody who wants to attend
+                contributes in equal amounts. You’ll receive a non-transferable
+                access token to the course‘s token-gated URL.
               </Trans>
             </StepItem>
           </div>

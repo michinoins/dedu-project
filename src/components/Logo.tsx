@@ -1,10 +1,10 @@
 import { ThemeOption } from 'constants/theme/themeOption'
 import { ThemeContext } from 'contexts/Theme/ThemeContext'
-import Image from "next/legacy/image"
+import Image from 'next/legacy/image'
 import { useContext } from 'react'
 import { twMerge } from 'tailwind-merge'
-import LIGHT_JUICE_LOGO from '/public/assets/juice-logo-full_black.svg'
-import DARK_JUICE_LOGO from '/public/assets/juice-logo-full_white.svg'
+import LIGHT_DEDU_LOGO from '/public/assets/dedu-logo-p1.png'
+import DARK_DEDU_LOGO from '/public/assets/dedu-logo-p2.png'
 
 export default function Logo({
   className,
@@ -17,8 +17,8 @@ export default function Logo({
 
   const imgSrc =
     themeOverride === 'dark' || themeOption === ThemeOption.dark
-      ? DARK_JUICE_LOGO
-      : LIGHT_JUICE_LOGO
+      ? DARK_DEDU_LOGO
+      : LIGHT_DEDU_LOGO
 
   if (!imgSrc) return null
 

@@ -104,19 +104,26 @@ export function TopSection() {
         headingClassName="text-5xl md:text-7xl"
         heading={
           <>
-            <Trans>TURNING EDUCATION</Trans>
-            <br />
-            <Trans>
-              <span style={{ ...rotatedStyle, ...helixFontStyle }}>O</span>
-              <span style={{ ...rotatedStyle, ...helixFontStyle }}>И</span>{' '}
-              <span style={{ ...rotatedStyle, ...helixFontStyle }}>I</span>
-              <span style={{ ...rotatedStyle, ...helixFontStyle }}>T</span>
-              <span style={{ ...rotatedStyle, ...helixFontStyle }}>S</span>{' '}
-              <span style={{ ...rotatedStyle, ...helixFontStyle }}>H</span>
-              <span style={{ ...rotatedStyle, ...helixFontStyle }}>E</span>
-              <span style={{ ...rotatedStyle, ...helixFontStyle }}>A</span>
-              <span style={{ ...rotatedStyle, ...helixFontStyle }}>D</span>
-            </Trans>{' '}
+            <div className="whitespace-nowrap">
+              <Trans>TURNING EDUCATION</Trans>
+            </div>
+            <div>
+              <Trans>
+                <span style={{ ...rotatedStyle, ...helixFontStyle }}>O</span>
+                <span style={{ ...rotatedStyle, ...helixFontStyle }}>
+                  И
+                </span>{' '}
+                <span style={{ ...rotatedStyle, ...helixFontStyle }}>I</span>
+                <span style={{ ...rotatedStyle, ...helixFontStyle }}>T</span>
+                <span style={{ ...rotatedStyle, ...helixFontStyle }}>
+                  S
+                </span>{' '}
+                <span style={{ ...rotatedStyle, ...helixFontStyle }}>H</span>
+                <span style={{ ...rotatedStyle, ...helixFontStyle }}>E</span>
+                <span style={{ ...rotatedStyle, ...helixFontStyle }}>A</span>
+                <span style={{ ...rotatedStyle, ...helixFontStyle }}>D</span>
+              </Trans>
+            </div>
           </>
         }
         subheading={

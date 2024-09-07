@@ -14,11 +14,10 @@ export function WhyJuiceboxSection() {
   return (
     <SectionContainer>
       <SectionHeading
-        heading={t`Why Juicebox?`}
+        heading={t`Why dEdu?`}
         subheading={
           <Trans>
-            Open a full-featured Ethereum treasury with programmable spending in
-            minutes.
+            THE ENORMITY OF CONFORMITY
           </Trans>
         }
       />
@@ -33,11 +32,12 @@ export function WhyJuiceboxSection() {
           icon={
             <UserGroupIcon className="h-8 w-8 text-melon-700 dark:text-melon-400" />
           }
-          heading={t`Community owned`}
+          heading={t`THE ENORMITY OF CONFORMITY`}
           content={
             <Trans>
-              Juicebox is owned and governed by the people — its builders,
-              supporters, and project creators using the protocol.
+              Today‘s education system is all about signaling a one-time degree but does no longer equip you to thrive in the modern economy. 
+              On top of that, students have no control over an increasingly politized curriculum, high tuition fees help perpetuate elites, and to conform you’re expected to go to college only between your late teens and your early twenties.
+              For an industry that spends an estimated 5T (trillion!) dollars per year globally, education arguably has the worst RoI, mostly cranking out unimaginative worker bees ready to toil in lifelong servitude to an employer.
             </Trans>
           }
         />
@@ -47,55 +47,12 @@ export function WhyJuiceboxSection() {
           icon={
             <BoltIcon className="h-8 w-8 text-peel-500 dark:text-peel-400" />
           }
-          heading={t`Battle tested`}
+          heading={t`MATCHING EDUCATIONAL DEMAND AND SUPPLY`}
           content={
             <Trans>
-              Juicebox is reliable, open-source, audited, and has been
-              battle-tested by more than 1,000 projects raising over 50,000 ETH.
-            </Trans>
-          }
-        />
-        <WhyJuiceboxCard
-          className="bg-grape-400"
-          iconWrapperClassName="bg-grape-200 dark:bg-grape-800"
-          icon={
-            <ShieldCheckIcon className="h-8 w-8 text-grape-600 dark:text-grape-400" />
-          }
-          heading={t`Trust minimized`}
-          content={
-            <Trans>
-              Juicebox is non-custodial, meaning you have complete ownership
-              over your project and its funds. Easily customize your own
-              on-chain rules.
-            </Trans>
-          }
-        />
-
-        <WhyJuiceboxCard
-          className="bg-crush-400 dark:bg-crush-400"
-          iconWrapperClassName="bg-crush-200 dark:bg-crush-800"
-          icon={
-            <ArrowTrendingUpIcon className="h-8 w-8 text-crush-700 dark:text-crush-400" />
-          }
-          heading={t`Flexible`}
-          content={
-            <Trans>
-              Whether you're building a boutique crypto law firm or the next
-              mega-fundraiser, Juicebox is customizable to match your needs.
-            </Trans>
-          }
-        />
-        <WhyJuiceboxCard
-          className="bg-split-400"
-          iconWrapperClassName="bg-split-200 dark:bg-split-800"
-          icon={
-            <CubeTransparentIcon className="h-8 w-8 text-split-700 dark:text-split-400" />
-          }
-          heading={t`Extensible`}
-          content={
-            <Trans>
-              Safe, Snapshot, or even on-chain governance: Juicebox uses simple
-              standards and works with all of your favorite Ethereum tools.
+              The dEdu School is replacing the one-time investment in an increasingly devaluating degree with on-demand learning if and when you want to invest in extra skills.
+              By letting its users crowdfund the courses they want to be taught, dEdu creates an open outcry market where educational demand and supply match, decentralizing and decensoring the curriculum.
+              Your proof-of-learning NFT after successful completion of a course at the School signals the real learning of relevant skills for today’s Web3 economy.
             </Trans>
           }
         />
