@@ -3,8 +3,8 @@ import { ThemeContext } from 'contexts/Theme/ThemeContext'
 import Image from 'next/legacy/image'
 import { useContext } from 'react'
 import { twMerge } from 'tailwind-merge'
-import LIGHT_DEDU_LOGO from '/public/assets/dedu-logo-p1.png'
-import DARK_DEDU_LOGO from '/public/assets/dedu-logo-p2.png'
+import DARK_DEDU_LOGO from '/public/assets/dedu-logo-p1.png'
+import LIGHT_DEDU_LOGO from '/public/assets/dedu-logo-p2.png'
 
 export default function Logo({
   className,

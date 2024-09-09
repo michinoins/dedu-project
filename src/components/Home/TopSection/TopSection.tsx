@@ -128,7 +128,7 @@ export function TopSection() {
         }
         subheading={
           <Trans>
-            <span style={helixFontStyle}>
+            <span style={{ ...helixFontStyle, fontSize: '1.5rem' }}>
               dEdu is a decentralized online school with live courses taught by
               anybody who gets crowdfunded to teach
             </span>
@@ -157,7 +157,7 @@ export function TopSection() {
               trackFathomGoal(HOMEPAGE.CREATE_A_PROJECT_CTA_NEW)
             }}
           >
-            <Trans>Teach a project</Trans>
+            <Trans>Teach a course</Trans>
           </XLButton>
         </Link>
       </div>
