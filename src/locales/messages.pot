@@ -182,6 +182,9 @@ msgstr ""
 msgid "This project has been archived and can't be paid."
 msgstr ""
 
+msgid "Teach a course"
+msgstr ""
+
 msgid "Payments to this project paused"
 msgstr ""
 
@@ -2925,9 +2928,6 @@ msgid "Setting a handle requires 2 transactions: <0>Set ENS name</0> and <1>Set 
 msgstr ""
 
 msgid "Redeem {tokenTicker}"
-msgstr ""
-
-msgid "Teach a project"
 msgstr ""
 
 msgid "{reservedRate} of token issuance is set aside for the recipients below."
