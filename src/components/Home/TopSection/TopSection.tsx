@@ -168,6 +168,7 @@ export function TopSection() {
           </Link>
         </div>
 
+        <div>tekito na data here</div>
         {!isLoading && renderProjects ? (
           <ProjectCarousel
             items={renderProjects?.map(p => (
