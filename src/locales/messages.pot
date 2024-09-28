@@ -110,6 +110,9 @@ msgstr ""
 msgid "project owner"
 msgstr ""
 
+msgid "TURNING EDUCATION"
+msgstr ""
+
 msgid "When people pay your project, they receive its tokens. Project tokens can be used for governance or community access, and token holders can redeem their tokens to reclaim some ETH from your project. You can also reserve some tokens for recipients of your choosing."
 msgstr ""
 
@@ -2732,6 +2735,9 @@ msgstr ""
 msgid "Approve migration for your {0} v{version} legacy ERC-20 tokens."
 msgstr ""
 
+msgid "Course proposals now open for crowdfunding:"
+msgstr ""
+
 msgid "Education"
 msgstr ""
 
@@ -3203,9 +3209,6 @@ msgstr ""
 msgid "{tokenTextSingular} recipients"
 msgstr ""
 
-msgid "TURNING EDUCATION fafafa"
-msgstr ""
-
 msgid "Project tokens can be redeemed to reclaim a portion of the ETH not needed for this cycle's payouts. The amount of ETH returned depends on this cycle's redemption rate. <0>Tokens are burned when they are redeemed.</0>"
 msgstr ""
 
@@ -3651,6 +3654,9 @@ msgid "7-day deadline"
 msgstr ""
 
 msgid "Changes to your collection details may not be reflected in some marketplaces (like Opensea). Contact the marketplace for support."
+msgstr ""
+
+msgid "Access token-gated courses<0/>staged by <1>teachers you crowdfund</1>"
 msgstr ""
 
 msgid "My account"
