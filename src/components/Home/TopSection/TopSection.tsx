@@ -1,9 +1,4 @@
 import { Trans } from '@lingui/macro'
-import {
-  HomepageProjectCard,
-  HomepageProjectCardSkeleton,
-} from 'components/Home/HomepageProjectCard'
-import { ProjectCarousel } from 'components/Home/ProjectCarousel'
 import { SectionContainer } from 'components/Home/SectionContainer'
 import { SectionHeading } from 'components/Home/SectionHeading'
 import { XLButton } from 'components/buttons/XLButton'
@@ -106,7 +101,7 @@ export function TopSection() {
           heading={
             <>
               <div className="whitespace-nowrap">
-                <Trans>TURNING EDUCATION fafafa</Trans>
+                <Trans>TURNING EDUCATION</Trans>
               </div>
               <div>
                 <Trans>
@@ -168,8 +163,39 @@ export function TopSection() {
           </Link>
         </div>
 
-        <div>tekito na data here</div>
-        {!isLoading && renderProjects ? (
+        <div className="relative z-10 mt-48 flex flex-col items-center">
+          <Image
+            src="/assets/images/home/categories-dedu/top-section-logo-orange.svg"
+            alt="Orange Logo"
+            width={50}
+            height={50}
+          />
+          <h2 className="mt-8 text-center text-4xl font-bold text-black">
+            <Trans>
+              Access token-gated courses
+              <br />
+              staged by{' '}
+              <span className="text-[#FFA500]">teachers you crowdfund</span>
+            </Trans>
+          </h2>
+        </div>
+        <div className="relative mt-8 w-full overflow-hidden">
+          <div className="pointer-events-none absolute inset-0 z-10 bg-gradient-to-b from-white via-transparent to-white" />
+          <Image
+            src="/assets/images/home/categories-dedu/greekSchool.svg"
+            alt="Greek School Background"
+            layout="responsive"
+            width={1200}
+            height={500}
+            className="h-auto w-full object-cover"
+          />
+        </div>
+        {/* // somehow text-gray-500 not working  */}
+        <div className="mt-4 text-center text-xl font-semibold text-[#828282] ">
+          <Trans>Course proposals now open for crowdfunding: </Trans>
+        </div>
+
+        {/* {!isLoading && renderProjects ? (
           <ProjectCarousel
             items={renderProjects?.map(p => (
               <HomepageProjectCard project={p} key={p.id} />
@@ -183,7 +209,7 @@ export function TopSection() {
                 <HomepageProjectCardSkeleton key={`loading-${idx}`} />
               ))}
           />
-        )}
+        )} */}
       </div>
     </SectionContainer>
   )
