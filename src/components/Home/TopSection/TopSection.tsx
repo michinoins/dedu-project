@@ -154,7 +154,7 @@ export function TopSection() {
               <Trans>Explore course</Trans>
             </XLButton>
           </Link>
-          <Link href="/create" className="w-full md:w-auto">
+          <Link href="/createf" className="w-full md:w-auto">
             <XLButton
               size="large"
               type="primary"
@@ -167,6 +167,7 @@ export function TopSection() {
             </XLButton>
           </Link>
         </div>
+
         {!isLoading && renderProjects ? (
           <ProjectCarousel
             items={renderProjects?.map(p => (
