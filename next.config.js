@@ -18,6 +18,7 @@ const WALLET_CONNECT_URLS = [
 const INFURA_IPFS_URLS = [
   'https://*.infura-ipfs.io',
   'https://ipfs.infura.io:5001',
+  'https://yellow-electoral-koala-54.mypinata.cloud/',
 ]
 
 const SCRIPT_SRC = [
@@ -46,6 +47,7 @@ const IMG_SRC = [
   'https://cdn.discordapp.com',
   'https://cdn.usefathom.com',
   '*.walletconnect.com',
+  'https://yellow-electoral-koala-54.mypinata.cloud/',
 ]
 
 const CONNECT_SRC = [
@@ -70,7 +72,7 @@ const CONNECT_SRC = [
   'https://*.supabase.co',
   'https://api.ensideas.com',
   'https://cloudflare-eth.com',
-  'https://rpc.sepolia.org/'
+  'https://rpc.sepolia.org/',
 ]
 
 const FRAME_ANCESTORS = [
@@ -176,7 +178,7 @@ const nextConfig = removeImports({
           ...SECURITY_HEADERS,
         ],
       },
-    ];
+    ]
   },
   images: {
     remotePatterns: [

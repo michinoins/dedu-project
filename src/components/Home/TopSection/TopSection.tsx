@@ -1,6 +1,4 @@
-import { ArrowSmallRightIcon } from '@heroicons/react/24/outline'
 import { Trans } from '@lingui/macro'
-import { Badge } from 'components/Badge'
 import {
   HomepageProjectCard,
   HomepageProjectCardSkeleton,
@@ -8,7 +6,6 @@ import {
 import { ProjectCarousel } from 'components/Home/ProjectCarousel'
 import { SectionContainer } from 'components/Home/SectionContainer'
 import { SectionHeading } from 'components/Home/SectionHeading'
-import { ProjectTag } from 'components/ProjectTags/ProjectTag'
 import { XLButton } from 'components/buttons/XLButton'
 import { HOMEPAGE } from 'constants/fathomEvents'
 import { PV_V1 } from 'constants/pv'
@@ -17,7 +14,9 @@ import { useTrendingProjects } from 'hooks/useTrendingProjects'
 import { client } from 'lib/apollo/client'
 import { trackFathomGoal } from 'lib/fathom'
 import { ProjectTagName } from 'models/project-tags'
+import Image from 'next/image'
 import Link from 'next/link'
+
 import { getSubgraphIdForProject } from 'utils/graph'
 
 const HEADER_TAGS: ProjectTagName[] = [
@@ -81,101 +80,109 @@ export function TopSection() {
   }
 
   return (
-    <SectionContainer className="pt-6 pb-24 md:px-0 md:pt-10">
-      <div className="flex justify-center">
-        <ul className="mb-5 flex gap-2 overflow-y-auto py-4">
-          {HEADER_TAGS.map(tag => (
-            <li key={tag}>
-              <ProjectTag tag={tag} isLink />
-            </li>
-          ))}
-          <li>
-            <Link href="/projects">
-              <Badge variant="default" clickable>
-                <Trans>All</Trans>
-                <ArrowSmallRightIcon className="inline h-4 w-4" />
-              </Badge>
-            </Link>
-          </li>
-        </ul>
-      </div>
-      <SectionHeading
-        className="mb-8"
-        headingClassName="text-5xl md:text-7xl"
-        heading={
-          <>
-            <div className="whitespace-nowrap">
-              <Trans>TURNING EDUCATION</Trans>
-            </div>
-            <div>
-              <Trans>
-                <span style={{ ...rotatedStyle, ...helixFontStyle }}>O</span>
-                <span style={{ ...rotatedStyle, ...helixFontStyle }}>
-                  И
-                </span>{' '}
-                <span style={{ ...rotatedStyle, ...helixFontStyle }}>I</span>
-                <span style={{ ...rotatedStyle, ...helixFontStyle }}>T</span>
-                <span style={{ ...rotatedStyle, ...helixFontStyle }}>
-                  S
-                </span>{' '}
-                <span style={{ ...rotatedStyle, ...helixFontStyle }}>H</span>
-                <span style={{ ...rotatedStyle, ...helixFontStyle }}>E</span>
-                <span style={{ ...rotatedStyle, ...helixFontStyle }}>A</span>
-                <span style={{ ...rotatedStyle, ...helixFontStyle }}>D</span>
-              </Trans>
-            </div>
-          </>
-        }
-        subheading={
-          <Trans>
-            <span style={{ ...helixFontStyle, fontSize: '1.5rem' }}>
-              dEdu is a decentralized online school with live courses taught by
-              anybody who gets crowdfunded to teach
-            </span>
-          </Trans>
-        }
-      />
-      <div className="mb-16 flex w-full flex-col-reverse justify-center gap-4 md:w-auto md:flex-row">
-        <Link href="/projects" className="w-full md:w-auto">
-          <XLButton
-            size="large"
-            type="default"
-            className="w-full md:w-auto"
-            onClick={() => {
-              trackFathomGoal(HOMEPAGE.EXPLORE_PROJECTS_CTA)
+    <SectionContainer className="relative pt-6 pb-24 md:px-0 md:pt-10">
+      <div
+        className="absolute inset-0 z-0 flex items-start justify-center"
+        style={{ top: '10%' }}
+      >
+        <div className="relative">
+          <Image
+            src="/assets/images/home/categories-dedu/top-section.svg"
+            alt="Background frame"
+            width={500}
+            height={366}
+            style={{
+              maxWidth: '100%',
+              height: 'auto',
             }}
-          >
-            <Trans>Explore course</Trans>
-          </XLButton>
-        </Link>
-        <Link href="/create" className="w-full md:w-auto">
-          <XLButton
-            size="large"
-            type="primary"
-            className="w-full md:w-auto"
-            onClick={() => {
-              trackFathomGoal(HOMEPAGE.CREATE_A_PROJECT_CTA_NEW)
-            }}
-          >
-            <Trans>Teach a course</Trans>
-          </XLButton>
-        </Link>
+          />
+        </div>
       </div>
-      {!isLoading && renderProjects ? (
-        <ProjectCarousel
-          items={renderProjects?.map(p => (
-            <HomepageProjectCard project={p} key={p.id} />
-          ))}
+      <div className="relative z-10">
+        <SectionHeading
+          className="mb-8"
+          headingClassName="text-5xl md:text-7xl"
+          topPadding="pt-40"
+          heading={
+            <>
+              <div className="whitespace-nowrap">
+                <Trans>TURNING EDUCATION</Trans>
+              </div>
+              <div>
+                <Trans>
+                  <span style={{ ...rotatedStyle, ...helixFontStyle }}>O</span>
+                  <span style={{ ...rotatedStyle, ...helixFontStyle }}>
+                    И
+                  </span>{' '}
+                  <span style={{ ...rotatedStyle, ...helixFontStyle }}>I</span>
+                  <span style={{ ...rotatedStyle, ...helixFontStyle }}>T</span>
+                  <span style={{ ...rotatedStyle, ...helixFontStyle }}>
+                    S
+                  </span>{' '}
+                  <span style={{ ...rotatedStyle, ...helixFontStyle }}>H</span>
+                  <span style={{ ...rotatedStyle, ...helixFontStyle }}>E</span>
+                  <span style={{ ...rotatedStyle, ...helixFontStyle }}>A</span>
+                  <span style={{ ...rotatedStyle, ...helixFontStyle }}>D</span>
+                </Trans>
+              </div>
+            </>
+          }
+          subheading={
+            <Trans>
+              <span style={{ ...helixFontStyle, fontSize: '1.5rem' }}>
+                dEdu is a{' '}
+                {/* // somehow tailwind is overwritten by something so apply inline style */}
+                <span style={{ color: '#8B5CF6' }}>
+                  decentralized online school
+                </span>{' '}
+                with live courses taught by anybody who gets crowdfunded to
+                teach
+              </span>
+            </Trans>
+          }
         />
-      ) : (
-        <ProjectCarousel
-          items={Array(8)
-            .fill(0)
-            ?.map((_, idx) => (
-              <HomepageProjectCardSkeleton key={`loading-${idx}`} />
+        <div className="mb-16 flex w-full flex-col-reverse justify-center gap-4 md:w-auto md:flex-row">
+          <Link href="/projects" className="w-full md:w-auto">
+            <XLButton
+              size="large"
+              type="default"
+              className="hover:bg-gray-100 w-full border-black bg-white px-8 text-black md:w-auto"
+              onClick={() => {
+                trackFathomGoal(HOMEPAGE.EXPLORE_PROJECTS_CTA)
+              }}
+            >
+              <Trans>Explore course</Trans>
+            </XLButton>
+          </Link>
+          <Link href="/create" className="w-full md:w-auto">
+            <XLButton
+              size="large"
+              type="primary"
+              className="hover:bg-gray-900 w-full border-black bg-white px-8 text-black md:w-auto"
+              onClick={() => {
+                trackFathomGoal(HOMEPAGE.CREATE_A_PROJECT_CTA_NEW)
+              }}
+            >
+              <Trans>Teach a course</Trans>
+            </XLButton>
+          </Link>
+        </div>
+        {!isLoading && renderProjects ? (
+          <ProjectCarousel
+            items={renderProjects?.map(p => (
+              <HomepageProjectCard project={p} key={p.id} />
             ))}
-        />
-      )}
+          />
+        ) : (
+          <ProjectCarousel
+            items={Array(8)
+              .fill(0)
+              ?.map((_, idx) => (
+                <HomepageProjectCardSkeleton key={`loading-${idx}`} />
+              ))}
+          />
+        )}
+      </div>
     </SectionContainer>
   )
 }
