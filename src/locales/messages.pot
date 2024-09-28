@@ -1409,9 +1409,6 @@ msgstr ""
 msgid "Treasury & Payouts"
 msgstr ""
 
-msgid "<0>dEdu is a decentralized online school with live courses taught by anybody who gets crowdfunded to teach</0>"
-msgstr ""
-
 msgid "Error loading holders"
 msgstr ""
 
@@ -2157,6 +2154,9 @@ msgid "JBX membership fee ({0}%):"
 msgstr ""
 
 msgid "Deploy project"
+msgstr ""
+
+msgid "<0>dEdu is a <1>decentralized online school</1> with live courses taught by anybody who gets crowdfunded to teach</0>"
 msgstr ""
 
 msgid "Unwatch all"
