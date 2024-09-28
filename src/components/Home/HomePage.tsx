@@ -10,7 +10,7 @@ import { TopSection } from 'components/Home/TopSection/TopSection'
 import { WhyJuiceboxSection } from 'components/Home/WhyJuiceboxSection/WhyJuiceboxSection'
 import { readNetwork } from 'constants/networks'
 import { NetworkName } from 'models/networkName'
-
+import { DecentralizeEducationSection } from './DecentralizedEducation/DecentralizedEducationSection'
 export function HomePage() {
   return (
     <>
@@ -18,6 +18,7 @@ export function HomePage() {
         <TopSection />
 
         <StatsSection />
+        <DecentralizeEducationSection />
 
         <BuiltForSection />
 
