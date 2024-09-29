@@ -2,7 +2,7 @@ import { Footer } from 'components/Footer/Footer'
 import { BuiltForSection } from 'components/Home/BuiltForSection/BuiltForSection'
 import { ConclusionSection } from 'components/Home/ConclusionSection/ConclusionSection'
 import { FaqSection } from 'components/Home/FaqSection'
-import { HowJuiceboxWorksSection } from 'components/Home/HowJuiceboxWorksSection/HowJuiceboxWorksSection'
+
 import { JuicyPicksSection } from 'components/Home/JuicyPicksSection/JuicyPicksSection'
 import { StatsSection } from 'components/Home/StatsSection'
 import { SuccessStoriesSection } from 'components/Home/SuccessStoriesSection/SuccessStoriesSection'
@@ -11,6 +11,7 @@ import { WhyJuiceboxSection } from 'components/Home/WhyJuiceboxSection/WhyJuiceb
 import { readNetwork } from 'constants/networks'
 import { NetworkName } from 'models/networkName'
 import { DecentralizeEducationSection } from './DecentralizedEducation/DecentralizedEducationSection'
+import { HowDEduWorksSection } from './HowDEduWorksSection/HowDEduWorksSection'
 export function HomePage() {
   return (
     <>
@@ -24,7 +25,7 @@ export function HomePage() {
 
         {readNetwork.name === NetworkName.mainnet && <SuccessStoriesSection />}
 
-        <HowJuiceboxWorksSection />
+        <HowDEduWorksSection />
 
         <WhyJuiceboxSection />
 
