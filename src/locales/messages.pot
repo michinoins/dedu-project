@@ -248,9 +248,6 @@ msgstr ""
 msgid "Contributions"
 msgstr ""
 
-msgid "If you want to teach about something, simply create a crowdfunding campaign on the School’s platform. You only need 1 dEdu token to be a content creator. Once funded, the School provides you with everything you need, from webinar software to content creation tools."
-msgstr ""
-
 msgid "Attach an image"
 msgstr ""
 
@@ -1241,9 +1238,6 @@ msgstr ""
 msgid "Issuance reduction rate:"
 msgstr ""
 
-msgid "If you’d like to see a course taught, back its campaign from your connected wallet using any major crypto. The course price is set by the teacher and everybody who wants to attend contributes in equal amounts. You’ll receive a non-transferable access token to the course‘s token-gated URL."
-msgstr ""
-
 msgid "This project has paused payments this cycle."
 msgstr ""
 
@@ -1739,6 +1733,9 @@ msgstr ""
 msgid "Unlimited"
 msgstr ""
 
+msgid "If you'd like to see a course taught, back its campaign from your connected wallet using any major crypto. The course price is set by the teacher and everybody who wants to attend contributes in equal amounts. You'll receive a non-transferable access token to the course's token-gated URL."
+msgstr ""
+
 msgid "Reserved rate"
 msgstr ""
 
@@ -1767,9 +1764,6 @@ msgid "Existing project payer addresses can be found in the Tools drawer (<0/>) 
 msgstr ""
 
 msgid "Total raised"
-msgstr ""
-
-msgid "Read the docs"
 msgstr ""
 
 msgid "Description"
@@ -1971,6 +1965,9 @@ msgid "By default, the payer will receive any project tokens minted from the pay
 msgstr ""
 
 msgid "Export data"
+msgstr ""
+
+msgid "A whole new way of transferring knowledge"
 msgstr ""
 
 msgid "Show a disclosure, a message, or a warning to supporters before they pay your project"
@@ -2178,6 +2175,9 @@ msgid "Enable controller migrations"
 msgstr ""
 
 msgid "StudioDAO is a decentralized movie studio flipping the script on how films get funded. By combining the power of collective action with NFTs tied to programmable treasuries, StudioDAO gives audiences a platform to vote on which films they want to fund and watch while giving filmmakers new opportunities to get their projects funded."
+msgstr ""
+
+msgid "If you want to teach about something, simply create a crowdfunding campaign on the School's platform. You only need 1 dEdu token to propose a course. Once funded, the School provides you with everything you need, from webinar software to content creation tools."
 msgstr ""
 
 msgid "Redeem your {tokensLabel} to reclaim a portion of the ETH not needed for payouts. Any {tokensLabel} you redeem will be burned."
@@ -2610,9 +2610,6 @@ msgid "Enable project owner token minting"
 msgstr ""
 
 msgid "Set aside a percentage of token issuance for the wallets and Juicebox projects of your choosing."
-msgstr ""
-
-msgid "It's fast, powerful and easy to use. Launch your project and get funded in minutes."
 msgstr ""
 
 msgid "Redemptions aren't possible when all of a project's ETH is being used for payouts."
