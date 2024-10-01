@@ -1,10 +1,5 @@
 import { Disclosure, Transition } from '@headlessui/react'
-import {
-  BriefcaseIcon,
-  MinusIcon,
-  PlusIcon,
-  UserIcon,
-} from '@heroicons/react/24/solid'
+import { ArrowDownRightIcon } from '@heroicons/react/24/solid'
 import { Trans } from '@lingui/macro'
 import QAs from 'components/Home/FaqList/QAs'
 import { SectionContainer } from 'components/Home/SectionContainer'
@@ -19,99 +14,70 @@ export function FaqSection() {
     setOpenId(openId === id ? null : id)
   }
 
-  return (
-    <SectionContainer>
-      <SectionHeading heading={<Trans>FAQs</Trans>} />
-      <div className="mx-auto w-full max-w-3xl">
-        {qa.map(({ id, q, a, type }) => (
+  const renderFaqGroup = (type: 'user' | 'creator') => {
+    const filteredQa = qa.filter(item => item.type === type)
+    return (
+      <div className="mb-8">
+        <h3 className="mb-4 text-xl font-semibold">
+          <Trans>{type === 'user' ? 'For users' : 'For course creators'}</Trans>
+        </h3>
+        {filteredQa.map(({ id, q, a }) => (
           <Disclosure as="div" key={id}>
             {() => {
               const isOpen = openId === id
-              const bgColor =
-                type === 'user'
-                  ? 'bg-bluebs-100 dark:bg-bluebs-800'
-                  : 'bg-melon-100 dark:bg-melon-800'
-
-              const textColor =
-                type === 'user'
-                  ? 'text-bluebs-800 dark:text-bluebs-100'
-                  : 'text-melon-800 dark:text-melon-100'
-
-              const Icon = type === 'user' ? UserIcon : BriefcaseIcon
-              const label = type === 'user' ? 'User' : 'Creator'
               return (
-                <div className="stroke-tertiary border-t">
+                <div className="border-gray-200 border-t">
                   <Disclosure.Button
-                    className="w-full py-8 outline-none"
+                    className="w-full py-6 text-left"
                     onClick={toggleDisclosure(id)}
                   >
-                    <>
-                      <div className="text-primary flex w-full items-center justify-between gap-6 text-start text-lg font-medium">
-                        <div className="flex items-center gap-2">
-                          <Icon className="h-5 w-5 flex-shrink-0" />
-                          <span
-                            className={`rounded-full px-3 py-2 ${bgColor} ${textColor}`}
-                          >
-                            {label}
-                          </span>
-                          {q}
-                        </div>
-                        <FaqButton open={isOpen} />
-                      </div>
-
-                      <Transition
-                        show={isOpen}
-                        as={Fragment}
-                        enter="transition-all ease-in-out duration-300"
-                        enterFrom="max-h-0 overflow-hidden opacity-0"
-                        enterTo="max-h-[1000px] overflow-hidden opacity-100"
-                        leave="transition-all ease-in-out duration-300"
-                        leaveFrom="max-h-[1000px] overflow-hidden opacity-100"
-                        leaveTo="max-h-0 overflow-hidden opacity-0"
-                      >
-                        <Disclosure.Panel className="mt-4 cursor-default pr-12 text-start text-grey-600 dark:text-slate-200">
-                          {a}
-                        </Disclosure.Panel>
-                      </Transition>
-                    </>
+                    <div className="flex items-center justify-between">
+                      <span className="text-lg font-medium">{q}</span>
+                      <FaqButton open={isOpen} />
+                    </div>
                   </Disclosure.Button>
+
+                  <Transition
+                    show={isOpen}
+                    as={Fragment}
+                    enter="transition-all ease-in-out duration-300"
+                    enterFrom="max-h-0 overflow-hidden opacity-0"
+                    enterTo="max-h-[1000px] overflow-hidden opacity-100"
+                    leave="transition-all ease-in-out duration-300"
+                    leaveFrom="max-h-[1000px] overflow-hidden opacity-100"
+                    leaveTo="max-h-0 overflow-hidden opacity-0"
+                  >
+                    <Disclosure.Panel className="pb-6 pr-12">
+                      {a}
+                    </Disclosure.Panel>
+                  </Transition>
                 </div>
               )
             }}
           </Disclosure>
         ))}
       </div>
+    )
+  }
+
+  return (
+    <SectionContainer>
+      <SectionHeading heading={<Trans>FAQs</Trans>} />
+      <div className="mx-auto w-full max-w-3xl">
+        {renderFaqGroup('user')}
+        {renderFaqGroup('creator')}
+      </div>
     </SectionContainer>
   )
 }
-
 const FaqButton = ({ open }: { open: boolean }) => {
   return (
     <div className="relative h-6 w-6">
-      <Transition
-        show={!open}
-        as={Fragment}
-        enter="transition-opacity ease-in-out duration-200"
-        enterFrom="opacity-0"
-        enterTo="opacity-100"
-        leave="transition-opacity ease-in-out duration-200"
-        leaveFrom="opacity-100"
-        leaveTo="opacity-0"
-      >
-        <PlusIcon className="absolute h-6 w-6" aria-hidden="true" />
-      </Transition>
-      <Transition
-        show={open}
-        as={Fragment}
-        enter="transition-opacity ease-in-out duration-200"
-        enterFrom="opacity-0"
-        enterTo="opacity-100"
-        leave="transition-opacity ease-in-out duration-200"
-        leaveFrom="opacity-100"
-        leaveTo="opacity-0"
-      >
-        <MinusIcon className="absolute h-6 w-6" aria-hidden="true" />
-      </Transition>
+      <ArrowDownRightIcon
+        className={`text-purple-600 h-6 w-6 transition-transform duration-200 ${
+          open ? 'rotate-[90deg]' : ''
+        }`}
+      />
     </div>
   )
 }

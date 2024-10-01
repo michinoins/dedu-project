@@ -1,6 +1,5 @@
 import { Footer } from 'components/Footer/Footer'
 import { BuiltForSection } from 'components/Home/BuiltForSection/BuiltForSection'
-import { ConclusionSection } from 'components/Home/ConclusionSection/ConclusionSection'
 import { FaqSection } from 'components/Home/FaqSection'
 
 import { JuicyPicksSection } from 'components/Home/JuicyPicksSection/JuicyPicksSection'
@@ -32,8 +31,6 @@ export function HomePage() {
         <JuicyPicksSection />
 
         <FaqSection />
-
-        <ConclusionSection />
       </div>
       <Footer />
     </>

@@ -6,7 +6,7 @@ import { SectionHeading } from 'components/Home/SectionHeading'
 import Loading from 'components/Loading'
 import template from 'lodash/template'
 import { projectTagText } from 'models/project-tags'
-import Image from "next/legacy/image"
+import Image from 'next/legacy/image'
 
 export const ExploreCategories = () => {
   const { tags, isLoading } = useExploreCategories()
@@ -14,11 +14,9 @@ export const ExploreCategories = () => {
     <div>
       <SectionHeading
         className="mb-12"
-        heading={<Trans>Explore categories</Trans>}
+        heading={<Trans>Past Courses</Trans>}
         subheading={
-          <Trans>
-            Whether it's a fundraiser or NFT project, we've got you covered.
-          </Trans>
+          <Trans>Past courses that are available to learn from.</Trans>
         }
       />
 
