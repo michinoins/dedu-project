@@ -671,6 +671,9 @@ msgstr ""
 msgid "Project token"
 msgstr ""
 
+msgid "Past Courses"
+msgstr ""
+
 msgid "Setup new NFTs for {projectTitle}"
 msgstr ""
 
@@ -2132,9 +2135,6 @@ msgstr ""
 msgid "Transfer ETH from your wallet to this project without minting tokens."
 msgstr ""
 
-msgid "Peep our selection of the juiciest projects right now."
-msgstr ""
-
 msgid "Check {lastEmailUpdated} and verify your new email address."
 msgstr ""
 
@@ -2364,9 +2364,6 @@ msgid "Total amount"
 msgstr ""
 
 msgid "You pay"
-msgstr ""
-
-msgid "Explore categories"
 msgstr ""
 
 msgid "Export a list of this cycle's reserved token recipients to CSV."
@@ -2604,9 +2601,6 @@ msgid "Burn {0}"
 msgstr ""
 
 msgid "{0} after {feePercentage}% JBX membership fee"
-msgstr ""
-
-msgid "Explore all projects"
 msgstr ""
 
 msgid "Edit Deadline"
@@ -3212,9 +3206,6 @@ msgstr ""
 msgid "Available payout"
 msgstr ""
 
-msgid "Big ups to the Ethereum community for crafting the infrastructure and economy to make Juicebox possible."
-msgstr ""
-
 msgid "Upload CSV"
 msgstr ""
 
@@ -3444,9 +3435,6 @@ msgid "NFTs, tokens and rewards will be sent to <0/>"
 msgstr ""
 
 msgid "See the code"
-msgstr ""
-
-msgid "Whether it's a fundraiser or NFT project, we've got you covered."
 msgstr ""
 
 msgid "Something went wrong."
@@ -3753,6 +3741,9 @@ msgid "ENS Name"
 msgstr ""
 
 msgid "Payouts are sent to the recipients below."
+msgstr ""
+
+msgid "Past courses that are available to learn from."
 msgstr ""
 
 msgid "Manage your {0}"
@@ -4386,9 +4377,6 @@ msgid "Load more"
 msgstr ""
 
 msgid "Loading"
-msgstr ""
-
-msgid "Juicy picks"
 msgstr ""
 
 msgid "Owner token minting"
