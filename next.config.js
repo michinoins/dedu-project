@@ -48,6 +48,7 @@ const IMG_SRC = [
   'https://cdn.usefathom.com',
   '*.walletconnect.com',
   'https://yellow-electoral-koala-54.mypinata.cloud/',
+  'https://*.pinata.cloud', // Added Pinata Cloud
 ]
 
 const CONNECT_SRC = [
@@ -73,6 +74,7 @@ const CONNECT_SRC = [
   'https://api.ensideas.com',
   'https://cloudflare-eth.com',
   'https://rpc.sepolia.org/',
+  'https://*.pinata.cloud', // Added Pinata Cloud
 ]
 
 const FRAME_ANCESTORS = [

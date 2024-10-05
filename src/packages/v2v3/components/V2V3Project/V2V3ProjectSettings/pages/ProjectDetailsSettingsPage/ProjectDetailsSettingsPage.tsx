@@ -44,7 +44,7 @@ export function ProjectDetailsSettingsPage() {
       tags: fields.tags,
     })
 
-    if (!uploadedMetadata.Hash) {
+    if (!uploadedMetadata.IpfsHash) {
       setLoadingSaveChanges(false)
       return
     }

@@ -89,7 +89,7 @@ export default function EditProjectModal({
       tokens: projectMetadata?.tokens ?? [],
     })
 
-    if (!uploadedMetadata.Hash) {
+    if (!uploadedMetadata.IpfsHash) {
       setLoadingSetURI(false)
       return
     }

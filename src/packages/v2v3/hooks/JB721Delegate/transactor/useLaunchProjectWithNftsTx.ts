@@ -67,7 +67,7 @@ interface LaunchProjectWithNftsTxArgs {
 type JB721DelegateLaunchProjectData = JB721DelegateLaunchFundingCycleData & {
   projectMetadata: {
     domain: number
-    content: string
+    content: string | null
   }
 }
 

@@ -35,7 +35,7 @@ export function EditNftsPostPaySection() {
       },
     })
 
-    if (!uploadedMetadata.Hash) {
+    if (!uploadedMetadata.IpfsHash) {
       setLoading(false)
       return
     }

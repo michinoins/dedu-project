@@ -57,12 +57,41 @@ function prepareTransaction({
   contract: Contract
   args: unknown[]
   options: TransactionOptions | undefined
-}) {
-  const tx =
-    options?.value !== undefined
-      ? contract[functionName](...args, { value: options.value })
-      : contract[functionName](...args)
-  return tx
+}): Promise<providers.TransactionResponse> {
+  if (typeof contract[functionName] !== 'function') {
+    console.error(`Function ${functionName} is not defined on the contract`)
+    throw new Error(`Function ${functionName} is not defined on the contract`)
+  }
+
+  if (!Array.isArray(args)) {
+    console.error('args is not an array:', args)
+    throw new Error('Invalid arguments: args must be an array')
+  }
+
+  // const validateObject = (obj, path = '') => {
+  //   for (let key in obj) {
+  //     if (obj[key] === undefined) {
+  //       console.error(`Undefined value at ${path}${key}`)
+  //     } else if (typeof obj[key] === 'object') {
+  //       validateObject(obj[key], `${path}${key}.`)
+  //     }
+  //   }
+  // }
+
+  // validateObject(args[1], 'tiered721DelegateData.')
+  // validateObject(args[2], 'projectData.')
+
+  try {
+    const tx =
+      options?.value !== undefined
+        ? contract[functionName](...args, { value: options.value })
+        : contract[functionName](...args)
+
+    return tx
+  } catch (error) {
+    console.error('Error preparing transaction:', error)
+    throw error
+  }
 }
 
 export type Transactor = (
@@ -125,14 +154,18 @@ export function useTransactor(): Transactor | undefined {
       }
 
       try {
+        // console.log('Transactor called with:', {
+        //   contract,
+        //   functionName,
+        //   args,
+        //   options,
+        // })
+
         const tx = prepareTransaction({ functionName, contract, args, options })
         const result: providers.TransactionResponse = await tx
 
-        console.info('✅ Transactor::submitted', result)
-
         // transaction was submitted, but not confirmed/mined yet.
         options?.onDone?.()
-
         // add transaction to the history UI
         const txTitle = options?.title ?? functionName
         addTransaction?.(

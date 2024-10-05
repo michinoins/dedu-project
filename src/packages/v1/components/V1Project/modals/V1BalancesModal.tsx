@@ -54,7 +54,7 @@ export function V1BalancesModal({
       tokens: editingTokenRefs.filter(t => t.type),
     })
 
-    if (!uploadedMetadata.Hash) {
+    if (!uploadedMetadata.IpfsHash) {
       setLoading(false)
       return
     }

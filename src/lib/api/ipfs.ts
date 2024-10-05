@@ -1,5 +1,5 @@
 import axios, { AxiosRequestConfig } from 'axios'
-import { InfuraPinResponse } from 'lib/infura/ipfs'
+import { PinataPinResponse } from 'lib/infura/ipfs'
 import { consolidateMetadata, ProjectMetadata } from 'models/projectMetadata'
 import { ipfsGatewayUrl } from 'utils/ipfs'
 
@@ -66,7 +66,7 @@ export const pinFile = async (
   const formData = new FormData()
   formData.append('file', image)
 
-  const res = await axios.post<InfuraPinResponse>(
+  const res = await axios.post<PinataPinResponse>(
     'https://api.juicebox.money/api/ipfs/file',
     formData,
     {
@@ -84,10 +84,9 @@ export const pinFile = async (
 }
 
 export const pinJson = async (data: unknown) => {
-  const res = await axios.post<InfuraPinResponse>('/api/ipfs/pinJSON', {
+  const res = await axios.post<PinataPinResponse>('/api/ipfs/pinJSON', {
     data,
   })
-
   return res.data
 }
 
