@@ -10,55 +10,40 @@ export function BuiltForSection() {
   return (
     <SectionContainer>
       <SectionHeading
-        heading={<Trans>Built for ideas like yours</Trans>}
+        heading={<Trans>UNCENSORED TEACHING</Trans>}
         subheading={
           <Trans>
-            Juicebox is as versatile as you are, build anything from an NFT
-            project to a boutique crypto lawfirm and everything in between.
+            Anybody with dEdu tokens can stage a campaign to teach at the school, about any subject. 
+            You decide what’s on the curriculum by crowdfunding the courses you want to see taught. 
+            Nobody sets the curriculum: The School is governed by the dEdu community and each dEdu token holder can propose an onchain vote to veto a course.
           </Trans>
         }
+        className="whitespace-nowrap overflow-hidden text-ellipsis"
       />
       <div
-        className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4"
+        className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2"
         ref={containerRef}
       >
         <BuiltForCard
           card="daos"
-          heading={t`DAOs`}
+          heading={t`MEET YOUR FELLOW STUDENTS ONLINE AND OFFLINE`}
           subheading={
             <Trans>
-              Launch a Decentralized Autonomous Organisation with governance in
-              minutes.
+              When a teacher gets funded, they commit to teach their course on the School‘s online platform via live webinar, where you‘ll get to meet and interact with your fellow students.
+              In addition, the School will help organise offline meetings in various locations.
+              As we grow, we plan to build a first physical school for residential education.
+              [blue-prints of the school]
             </Trans>
           }
         />
         <BuiltForCard
           card="crowdfunding"
-          heading={t`Crowdfunding`}
+          heading={t`CRYPTO CREDENTIALS`}
           subheading={
             <Trans>
-              All-in-one crowdfunding with powerful treasury management and
-              redemptions.
-            </Trans>
-          }
-        />
-        <BuiltForCard
-          card="nfts"
-          heading={t`NFT Projects`}
-          subheading={
-            <Trans>
-              Build and launch your NFT project right here on Juicebox with
-              built-in redemptions.
-            </Trans>
-          }
-        />
-        <BuiltForCard
-          card="builders"
-          heading={t`Creators & builders`}
-          subheading={
-            <Trans>
-              Whatever you're building or creating — get it launched and funded
-              on Juicebox.
+              You'll get the teachers you deserve whose courses will gain the recognition they merit.
+              When you‘ve completed all modules of a given course, you’ll receive a soul-bound NFT as proof-of-learing.
+              Teachers too can build their onchain reputation by way of students’ token-authenticated reviews.
             </Trans>
           }
         />

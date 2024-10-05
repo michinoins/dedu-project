@@ -1,11 +1,11 @@
 import { GithubFilled, TwitterCircleFilled } from '@ant-design/icons'
-import { Trans, t } from '@lingui/macro'
+import { t } from '@lingui/macro'
 import ExternalLink from 'components/ExternalLink'
-import Logo from 'components/Logo'
 import Discord from 'components/icons/Discord'
 import { TERMS_OF_SERVICE_URL } from 'constants/links'
 import { useWallet } from 'hooks/Wallet'
 import { useFetchDeveloperWallets } from 'hooks/useFetchDeveloperWallets'
+import Image from 'next/image'
 import { isEqualAddress } from 'utils/address'
 import { LinkColProps, LinkColumn } from './LinkColumn'
 
@@ -144,15 +144,26 @@ export function Footer() {
   const gitCommit = process.env.NEXT_PUBLIC_VERSION
 
   return (
-    <footer className="border-t border-t-slate-500 bg-slate-900 px-5 pt-12 text-sm text-slate-100 md:px-12">
+    <footer className="border-t border-t-slate-500 bg-slate-200 px-5 pt-12 text-sm text-slate-100 md:px-12">
       <div className="m-auto max-w-6xl">
         <div className="flex flex-col gap-y-10 md:grid md:grid-cols-6 md:items-start md:gap-x-10">
-          <div className="flex flex-col gap-y-5 text-slate-200 md:col-span-2 md:items-start">
-            <Logo themeOverride="dark" />
-            <Trans>
-              Big ups to the Ethereum community for crafting the infrastructure
-              and economy to make Juicebox possible.
-            </Trans>
+          <div className="flex flex-col gap-y-5 text-slate-300 md:col-span-2 md:items-start">
+            <div className="relative h-16 w-40">
+              <Image
+                src="/assets/images/home/categories-dedu/bottom-dedu-logo.svg"
+                alt="dedu-background"
+                className="z-0"
+                width={1000}
+                height={500}
+              />
+              <Image
+                src="/assets/images/home/categories-dedu/bottom-dedu-char-logo.svg"
+                alt="dedu-char-logo"
+                layout="fill"
+                objectFit="contain"
+                className="z-10"
+              />
+            </div>
           </div>
           {LinkCols.map((props, i) => (
             <LinkColumn key={i} {...props} />
