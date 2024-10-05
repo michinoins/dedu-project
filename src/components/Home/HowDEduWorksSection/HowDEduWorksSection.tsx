@@ -7,8 +7,8 @@ import Link from 'next/link'
 
 export function HowDEduWorksSection() {
   return (
-    <SectionContainer className="relative pt-6 pb-24 md:px-0 md:pt-10">
-      <div className="flex flex-col items-center">
+    <SectionContainer className="relative bg-peel-50 pt-6 pb-24 md:px-0 md:pt-10">
+      <div className=" flex flex-col items-center">
         <Image
           src="/assets/images/home/categories-dedu/top-section-logo-orange.svg"
           alt="dEdu Logo"
@@ -16,7 +16,7 @@ export function HowDEduWorksSection() {
           height={50}
         />
         <SectionHeading
-          className="mb-8"
+          className="mb-8 mt-4"
           heading={<Trans>How dEdu works</Trans>}
           subheading={<Trans>A whole new way of transferring knowledge</Trans>}
         />
@@ -75,22 +75,42 @@ function Card({
   imagePosition: 'top' | 'bottom'
 }) {
   return (
-    <div className="bg-white rounded-lg p-6 shadow-md max-w-md flex flex-col">
+    <div className="flex max-w-md flex-col rounded-lg bg-white p-6 shadow-md">
       {imagePosition === 'top' && (
         <>
-          <Image src={imageSrc} alt={`Illustration for ${title}`} width={300} height={200} className="mb-4" />
-          <h3 className="text-2xl font-bold mb-4 text-gray-800">{title}</h3>
+          <Image
+            src={imageSrc}
+            alt={`Illustration for ${title}`}
+            width={300}
+            height={200}
+            className="mb-4"
+          />
+          <h3 className="mb-4 text-2xl font-bold text-peel-500">{title}</h3>
         </>
       )}
-      {imagePosition === 'bottom' && <h3 className="text-2xl font-bold mb-4 text-gray-800">{title}</h3>}
-      <p className="mb-6 text-gray-600">{content}</p>
-      <Link href={ctaLink} className={imagePosition === 'bottom' ? 'mb-4' : 'mt-auto'}>
-        <XLButton size="large" className="w-full bg-white hover:bg-gray-100 text-black border border-black">
+      {imagePosition === 'bottom' && (
+        <h3 className="mb-4 text-2xl font-bold text-peel-500">{title}</h3>
+      )}
+      <p className="text-gray-600 mb-6">{content}</p>
+      <Link
+        href={ctaLink}
+        className={imagePosition === 'bottom' ? 'mb-4' : 'mt-auto'}
+      >
+        <XLButton
+          size="large"
+          className="w-full border border-peel-500 bg-peel-500 text-white hover:bg-peel-600"
+        >
           {ctaText}
         </XLButton>
       </Link>
       {imagePosition === 'bottom' && (
-        <Image src={imageSrc} alt={`Illustration for ${title}`} width={300} height={200} className="mt-4" />
+        <Image
+          src={imageSrc}
+          alt={`Illustration for ${title}`}
+          width={300}
+          height={200}
+          className="mt-4"
+        />
       )}
     </div>
   )

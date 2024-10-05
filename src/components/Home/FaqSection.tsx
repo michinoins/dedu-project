@@ -18,15 +18,15 @@ export function FaqSection() {
     const filteredQa = qa.filter(item => item.type === type)
     return (
       <div className="mb-8">
-        <h3 className="mb-4 text-xl font-semibold">
+        <h3 className="mb-4 text-3xl font-semibold" style={{ color: '#b667f1' }}>
           <Trans>{type === 'user' ? 'For users' : 'For course creators'}</Trans>
         </h3>
-        {filteredQa.map(({ id, q, a }) => (
+        {filteredQa.map(({ id, q, a }, index) => (
           <Disclosure as="div" key={id}>
             {() => {
               const isOpen = openId === id
               return (
-                <div className="border-gray-200 border-t">
+                <div className={index !== 0 ? 'border-gray-200 border-t' : ''}>
                   <Disclosure.Button
                     className="w-full py-6 text-left"
                     onClick={toggleDisclosure(id)}
@@ -62,7 +62,7 @@ export function FaqSection() {
 
   return (
     <SectionContainer>
-      <SectionHeading heading={<Trans>FAQs</Trans>} />
+      <SectionHeading heading={<Trans><span style={{ color: '#b667f1' }}>FAQs</span></Trans>} />
       <div className="mx-auto w-full max-w-3xl">
         {renderFaqGroup('user')}
         {renderFaqGroup('creator')}
@@ -70,14 +70,17 @@ export function FaqSection() {
     </SectionContainer>
   )
 }
+
 const FaqButton = ({ open }: { open: boolean }) => {
   return (
     <div className="relative h-6 w-6">
       <ArrowDownRightIcon
-        className={`text-purple-600 h-6 w-6 transition-transform duration-200 ${
+        className={`h-6 w-6 transition-transform duration-200 ${
           open ? 'rotate-[90deg]' : ''
         }`}
+        style={{ color: open ? '#b667f1' : 'currentColor' }}
       />
     </div>
   )
 }
+

@@ -12,9 +12,9 @@ module.exports = {
   prefix: '',
   theme: {
     fontFamily: {
-      display: ['Agrandir-Wide', ...defaultTheme.fontFamily.sans],
-      heading: ['Agrandir', ...defaultTheme.fontFamily.sans],
-      body: ['Beatrice', ...defaultTheme.fontFamily.sans],
+      display: ['Helix', ...defaultTheme.fontFamily.sans],
+      heading: ['Helix', ...defaultTheme.fontFamily.sans],
+      body: ['Helix', ...defaultTheme.fontFamily.sans],
       mono: [
         'ui-monospace',
         'SFMono-Regular',

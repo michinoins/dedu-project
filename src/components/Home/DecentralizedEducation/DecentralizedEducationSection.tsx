@@ -1,13 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-export function DecentralizeEducationSection() {
+export function DecentralizedEducationSection() {
   return (
-    <div className="relative mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+    <div className="max-w-8xl relative mx-auto px-4 py-16 sm:px-6 lg:px-8">
       <div className="flex flex-col">
         <div className="relative mb-8 flex flex-col items-start lg:flex-row">
-          <div className="flex flex-col lg:w-1/2">
-            <div className="mb-4 flex items-center">
+          <div className="relative flex flex-col items-end lg:w-1/2">
+            <div className="absolute top-0 left-60 mb-4">
               <Image
                 src="/assets/images/home/categories-dedu/top-section-logo-purple.svg"
                 alt="dEdu Logo"
@@ -15,12 +15,13 @@ export function DecentralizeEducationSection() {
                 height={50}
               />
             </div>
-            <h2 className="mb-4 text-4xl font-bold">
-              Let's <span className="text-purple-600">decentralize</span> who
-              decides what is taught to whom
+            <h2 className="mb-8 w-full pt-16 text-right text-6xl font-bold">
+              Let's <span className="text-grape-600">decentralize</span> <br />
+              who decides what <br />
+              is taught to whom
             </h2>
           </div>
-          <div className="mt-4 text-xl lg:absolute lg:right-64 lg:bottom-0 lg:mt-0">
+          <div className="mb-8 text-xl lg:absolute lg:right-64 lg:bottom-0 lg:mt-0">
             <Link
               href="/about-dedu-token"
               className="text-blue-500 hover:underline"
@@ -42,7 +43,7 @@ export function DecentralizeEducationSection() {
             />
           </div>
           <div className="absolute right-10 top-0 z-10 lg:w-2/3 lg:pl-12">
-            <div className="space-y-8">
+            <div className="space-y-8 font-semibold">
               <Card
                 title="Uncensored curriculum"
                 items={[
@@ -77,7 +78,7 @@ export function DecentralizeEducationSection() {
 
 function Card({ title, items }: { title: string; items: string[] }) {
   return (
-    <div className="flex rounded-lg bg-gradient-to-l from-grape-300/80 to-white/80 p-6 shadow-lg backdrop-blur-sm">
+    <div className="flex rounded-lg bg-gradient-to-l from-grape-300/60 to-white/80 p-6 shadow-lg backdrop-blur-sm">
       <div className="flex w-1/3 flex-col justify-end pr-4">
         <h3 className="text-2xl font-semibold text-black">{title}</h3>
       </div>
