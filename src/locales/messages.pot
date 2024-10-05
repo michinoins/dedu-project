@@ -656,6 +656,9 @@ msgstr ""
 msgid "No deadline"
 msgstr ""
 
+msgid "<0>FAQs</0>"
+msgstr ""
+
 msgid "Change networks to deploy"
 msgstr ""
 
@@ -1083,6 +1086,9 @@ msgid "Pay button text"
 msgstr ""
 
 msgid "Limited (1,050 ETH)"
+msgstr ""
+
+msgid "- Han, Founder"
 msgstr ""
 
 msgid "Your total legacy tokens"
@@ -2709,9 +2715,6 @@ msgid "Create a project payer address"
 msgstr ""
 
 msgid "NFTs are burned when they are redeemed."
-msgstr ""
-
-msgid "FAQs"
 msgstr ""
 
 msgid "Transfer unclaimed {0}"
