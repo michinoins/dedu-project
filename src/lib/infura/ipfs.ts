@@ -3,7 +3,13 @@ import fs from 'fs'
 
 const FormData = require('form-data')
 
+// add comment
 export type PinataPinResponse = {
+  IpfsHash: string
+  PinSize: number
+  Timestamp: string
+}
+export type JuiceboxPinResponse = {
   Hash: string
   PinSize: number
   Timestamp: string

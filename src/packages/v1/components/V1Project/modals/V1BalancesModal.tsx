@@ -60,7 +60,7 @@ export function V1BalancesModal({
     }
 
     setProjectUriTx(
-      { cid: uploadedMetadata.Hash },
+      { cid: uploadedMetadata.IpfsHash },
       {
         onDone: async () => {
           if (pv) {

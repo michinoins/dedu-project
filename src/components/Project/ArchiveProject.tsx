@@ -65,7 +65,7 @@ export function ArchiveProject({
     }
 
     const txSuccessful = await storeCidTx(
-      { cid: uploadedMetadata.Hash },
+      { cid: uploadedMetadata.IpfsHash },
       {
         onConfirmed: async () => {
           setIsLoadingArchive(false)

@@ -707,9 +707,6 @@ msgstr ""
 msgid "Current handle"
 msgstr ""
 
-msgid "test your thing"
-msgstr ""
-
 msgid "Telegram link"
 msgstr ""
 
