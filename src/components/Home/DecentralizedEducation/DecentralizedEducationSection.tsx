@@ -16,7 +16,8 @@ export function DecentralizedEducationSection() {
               />
             </div>
             <h2 className="mb-8 w-full pt-16 text-right text-6xl font-bold">
-              Let's <span className="text-grape-600">decentralize</span> <br />
+              Let's <span style={{ color: '#8B5CF6' }}>decentralize</span>{' '}
+              <br />
               who decides what <br />
               is taught to whom
             </h2>
@@ -32,18 +33,17 @@ export function DecentralizedEducationSection() {
         </div>
 
         <div className="relative">
-          <div className="lg:w-1/2">
+          <div className="relative h-[600px] lg:w-1/2">
             <Image
               src="/assets/images/home/categories-dedu/greekBuilding.svg"
               alt="Greek Building"
-              width={500}
-              height={300}
-              layout="responsive"
+              layout="fill"
+              objectFit="contain"
               className="z-0"
             />
           </div>
-          <div className="absolute right-10 top-0 z-10 lg:w-2/3 lg:pl-12">
-            <div className="space-y-8 font-semibold">
+          <div className="absolute right-10 top-0 z-10 h-full lg:w-2/3 lg:pl-12">
+            <div className="flex h-full flex-col justify-between py-8">
               <Card
                 title="Uncensored curriculum"
                 items={[
@@ -78,7 +78,7 @@ export function DecentralizedEducationSection() {
 
 function Card({ title, items }: { title: string; items: string[] }) {
   return (
-    <div className="flex rounded-lg bg-gradient-to-l from-grape-300/60 to-white/80 p-6 shadow-lg backdrop-blur-sm">
+    <div className="mb-8 flex rounded-lg bg-gradient-to-l from-grape-300/60 to-white/80 p-6 shadow-lg backdrop-blur-sm last:mb-0">
       <div className="flex w-1/3 flex-col justify-end pr-4">
         <h3 className="text-2xl font-semibold text-black">{title}</h3>
       </div>
