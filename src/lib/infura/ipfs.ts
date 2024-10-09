@@ -3,6 +3,7 @@ import fs from 'fs'
 
 const FormData = require('form-data')
 
+// add comment
 export type PinataPinResponse = {
   IpfsHash: string
   PinSize: number
