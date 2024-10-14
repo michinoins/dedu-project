@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export function DecentralizedEducationSection() {
   return (
-    <div className="max-w-8xl relative mx-auto px-4 py-16 sm:px-6 lg:px-8">
+    <div className="max-w-8xl relative mx-auto px-4 py-16 pb-36 sm:px-6 lg:px-8">
       <div className="flex flex-col">
         <div className="relative mb-8 flex flex-col items-start lg:flex-row">
           <div className="relative flex flex-col items-end lg:w-1/2">
