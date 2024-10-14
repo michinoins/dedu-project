@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export function DecentralizedEducationSection() {
   return (
-    <div className="max-w-8xl relative mx-auto px-4 py-16 pb-36 sm:px-6 lg:px-8">
+    <div className="max-w-8xl relative mx-auto px-4 py-16 pb-48 sm:px-6 lg:px-8 ">
       <div className="flex flex-col">
         <div className="relative mb-8 flex flex-col items-start lg:flex-row">
           <div className="relative flex flex-col items-end lg:w-1/2">
@@ -32,8 +32,8 @@ export function DecentralizedEducationSection() {
           </div>
         </div>
 
-        <div className="relative">
-          <div className="relative h-[600px] lg:w-1/2">
+        <div className="relative flex flex-col lg:flex-row">
+          <div className="relative h-[300px] w-full lg:h-[600px] lg:w-1/2">
             <Image
               src="/assets/images/home/categories-dedu/greekBuilding.svg"
               alt="Greek Building"
@@ -42,7 +42,7 @@ export function DecentralizedEducationSection() {
               className="z-0"
             />
           </div>
-          <div className="absolute right-10 top-0 z-10 h-full lg:w-2/3 lg:pl-12">
+          <div className="z-10 mt-8 w-full lg:absolute lg:right-10 lg:top-0 lg:mt-0 lg:h-full lg:w-2/3 lg:pl-12">
             <div className="flex h-full flex-col justify-between py-8">
               <Card
                 title="Uncensored curriculum"
@@ -78,11 +78,13 @@ export function DecentralizedEducationSection() {
 
 function Card({ title, items }: { title: string; items: string[] }) {
   return (
-    <div className="mb-8 flex rounded-lg bg-gradient-to-l from-grape-300/60 to-white/80 p-6 shadow-lg backdrop-blur-sm last:mb-0">
-      <div className="flex w-1/3 flex-col justify-end pr-4">
-        <h3 className="text-2xl font-semibold text-black">{title}</h3>
+    <div className="mb-8 flex flex-col rounded-lg bg-gradient-to-l from-grape-300/60 to-white/80 p-6 shadow-lg backdrop-blur-sm last:mb-0 sm:flex-row">
+      <div className="mb-4 w-full sm:mb-0 sm:w-1/3 sm:pr-4">
+        <h3 className="break-words text-2xl font-semibold text-black">
+          {title}
+        </h3>
       </div>
-      <div className="w-2/3">
+      <div className="w-full sm:w-2/3">
         <ul className="text-purple-900 list-disc space-y-2 pl-5">
           {items.map((item, index) => (
             <li key={index} className="text-sm">
