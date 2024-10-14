@@ -42,7 +42,7 @@ export function EditNftsPostPaySection() {
 
     const txSuccess = await editProjectDetailsTx(
       {
-        cid: uploadedMetadata.Hash,
+        cid: uploadedMetadata.IpfsHash,
       },
       {
         onConfirmed: async () => {

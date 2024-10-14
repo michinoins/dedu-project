@@ -51,7 +51,7 @@ export function ProjectDetailsSettingsPage() {
 
     const txSuccess = await editV2ProjectDetailsTx(
       {
-        cid: uploadedMetadata.Hash,
+        cid: uploadedMetadata.IpfsHash,
       },
       {
         onConfirmed: async () => {

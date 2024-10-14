@@ -12,7 +12,7 @@ export function transformPayEventsRes(
       amountUSD: event.amountUSD ? new Ether(BigInt(event.amountUSD)) : undefined,
       beneficiary: event.beneficiary,
       beneficiaryTokenCount: new JBProjectToken(
-        BigInt(event.beneficiaryTokenCount),
+        BigInt(event.beneficiary),
       ),
       timestamp: event.timestamp,
       txHash: event.txHash,

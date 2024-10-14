@@ -1,13 +1,12 @@
 import { Trans } from '@lingui/macro'
 import { XLButton } from 'components/buttons/XLButton'
-import { SectionContainer } from 'components/Home/SectionContainer'
 import { SectionHeading } from 'components/Home/SectionHeading'
 import Image from 'next/image'
 import Link from 'next/link'
 
 export function HowDEduWorksSection() {
   return (
-    <SectionContainer className="relative bg-peel-50 pt-6 pb-24 md:px-0 md:pt-10">
+    <div className="relative bg-peel-50 pt-6 pb-24 md:px-0 md:pt-10">
       <div className=" flex flex-col items-center">
         <Image
           src="/assets/images/home/categories-dedu/top-section-logo-orange.svg"
@@ -55,7 +54,7 @@ export function HowDEduWorksSection() {
           />
         </div>
       </div>
-    </SectionContainer>
+    </div>
   )
 }
 

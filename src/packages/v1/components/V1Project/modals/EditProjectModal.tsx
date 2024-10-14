@@ -95,7 +95,7 @@ export default function EditProjectModal({
     }
 
     setProjectUriTx(
-      { cid: uploadedMetadata.Hash },
+      { cid: uploadedMetadata.IpfsHash },
       {
         onDone: () => setLoadingSetURI(false),
         onConfirmed: async () => {
